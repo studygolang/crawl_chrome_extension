@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/logo19.png",
+         "38": "images/logo48.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "分享到Go语言中文网"
+   },
+   "content_scripts": [ {
+      "js": [ "index.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "分享到Go语言中文网",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0NZiIx93WKHBa2VTCb4UZfUDRRuAsiFoFjd37oEK1NvUMFJeFvYHwAEeFiAy9/+5bR2UCz8QW0IhHZmXiIPst75KPzmR97s5LZ50/M1NnfI8MpqzZXOqdE95SKh308pSSAxkVoW/h0YggAyZxgncGc8bbcTKJ+n8Tw7hVqRTzFjDLP2LqAw0xDNi6BtuNFPIFK7XgdOknCptZA0GMZnFz0s1sHNWP9xy5FadACOYtGDanlf1dUasVwCcGgIgu2UDsOqs/gNwtWxJGHZKJ++vbOPeEaY+3zrgSEZNrCDTvIX65tQQeemWdgrHqNCyIv2VyNgv8GgZKUCySMI4pBYIYQIDAQAB",
+   "manifest_version": 2,
+   "name": "分享到Go语言中文网",
+   "permissions": [ "tabs", "http://studygolang.com/*" ],
+   "version": "1.0.0"
+}
